@@ -521,16 +521,18 @@ footer .container .input-email button {
 }
 
 @media (max-width: 1025px) {
-    .app .app_img img:first-child{
+    .app .app_img img:first-child {
         width: 185px !important;
     }
 
     .app .app_text h2 {
         font-size: 40px;
     }
-    .app .app_text{
+
+    .app .app_text {
         margin-left: 46px;
     }
+
     main {
         padding: 0 3%;
     }
@@ -550,6 +552,22 @@ footer .container .input-email button {
 
     .produtos .row-produtos .card-produto.red .titulo {
         font-size: 20px;
+    }
+
+    .depoimentos .card-depoimentos {
+        height: fit-content !important;
+    }
+
+    .depoimentos .card-depoimentos .text {
+        line-height: 22px;
+    }
+
+    .depoimentos .container {
+        flex-direction: column;
+    }
+
+    .depoimentos-col-2 {
+        margin: 0 auto;
     }
 }
 
@@ -603,30 +621,58 @@ footer .container .input-email button {
         width: 100% !important;
         margin: 20px 0 !important;
     }
+
     .produtos .row-produtos {
         flex-wrap: wrap;
     }
 }
+
 @media (max-width: 820px) {
-    .app .container{
+    .app .container {
         flex-direction: column;
     }
-    .app{
+
+    .app {
         height: auto;
         padding: 80px 0;
     }
+
     .app .app_img {
         width: fit-content;
     }
+
     .app .app_text {
         width: 90%;
         margin: 30px 0 0 0;
     }
+
     .app .app_text h2 {
         text-align: center;
     }
+
     .app .app_text div {
         width: fit-content;
         margin: 15px auto 0 auto;
+    }
+
+    .contacto_info .container {
+        flex-wrap: wrap;
+    }
+
+    .contacto_info .whatsapp,
+    .contacto_info .telefone{
+        margin: 20px;
+    }
+    footer .container {
+        flex-wrap: wrap;
+    }
+    footer .col-footer{
+        margin: 17px 0;
+    }
+    footer .container>img {
+        opacity: 0.3;
+    }
+    .copy {
+        padding-top: 57px;
     }
 }
