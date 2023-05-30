@@ -133,6 +133,10 @@ main .main_img img:nth-child(4) {
     padding: 20px 5%;
 }
 
+.menu-produtos div {
+    margin: 10px 0;
+}
+
 .menu button {
     background: linear-gradient(95.52deg, #FFC71F -10.96%, #FFAF18 102.66%);
     box-shadow: 2px 4px 12px rgba(255, 199, 31, 0.25);
@@ -153,6 +157,7 @@ main .main_img img:nth-child(4) {
     width: 100%;
     margin: 0 40px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .menu .container .menu-produtos div div {
@@ -435,6 +440,8 @@ footer .container {
 footer .col-footer {
     margin-right: 0px;
     width: 200px;
+    position: relative;
+    z-index: 10;
 }
 
 footer h3 {
@@ -660,19 +667,35 @@ footer .container .input-email button {
     }
 
     .contacto_info .whatsapp,
-    .contacto_info .telefone{
+    .contacto_info .telefone {
         margin: 20px;
     }
+
     footer .container {
         flex-wrap: wrap;
     }
-    footer .col-footer{
+
+    footer .col-footer {
         margin: 17px 0;
     }
+
     footer .container>img {
         opacity: 0.3;
     }
+
     .copy {
         padding-top: 57px;
+    }
+}
+
+@media (max-width: 800px) {
+    footer .container .col-footer.w-400 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 530px) {
+    main .main_img img:nth-child(2) {
+        right: -30px;
     }
 }

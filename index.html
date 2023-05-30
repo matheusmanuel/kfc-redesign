@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- swiper js css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- splider js -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
     <title>Kfc website</title>
 </head>
 
@@ -63,9 +64,6 @@
     <div class="menu">
         <button>Menu</button>
         <div class="container">
-            <div class="menu-arrow-left">
-                <img src="img/arrow-left.svg" alt="">
-            </div>
             <div class="menu-produtos">
                 <div>
                     <img src="img/menu-01.svg" alt="">
@@ -92,13 +90,10 @@
                     <p>WINGS BUCKET</p>
                 </div>
             </div>
-            <div class="menu-arrow-right">
-                <img src="img/arrow-right.svg" alt="">
-            </div>
         </div>
     </div>
     <!-- end menu -->
-    <!-- produtos  -->
+     <!-- produtos  -->
     <section class="produtos">
         <div class="container">
             <!-- row produtos -->
@@ -281,7 +276,7 @@
                 </ul>
             </div>
             <!-- col footer -->
-            <div class="col-footer">
+            <div class="col-footer w-400">
                 <h3>Stay up to date</h3>
                 <div class="input-email">
                     <form action="">
@@ -303,7 +298,28 @@
         </div>
     </div>
     <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script>
+        const splide = new Splide(".splide", {
+            type: "loop",
+            drag: "free",
+            focus: "center",
+            // perPage: 4,
+            autoScroll: {
+                speed: 10,
+            },
+            rewind: true,
+            pagination: false,
+            // breakpoints: {
+            //     1000: {
+            //         perPage: 2,
+            //     },
+            // },
+        });
+        splide.mount();
+    </script>
 </body>
 
 </html>
